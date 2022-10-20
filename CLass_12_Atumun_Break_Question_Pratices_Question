@@ -1,0 +1,114 @@
+
+
+
+
+#program for find sum and number average in the list
+
+
+import math
+print("hello world")
+Memo = [1,2,3,4]
+b=len(Memo)               # working
+print
+print(sum(Memo))
+a=sum(Memo)
+print(a/b)
+
+
+'''To find the largest and smallest number number in a list 
+with out using min() and max()'''
+
+#   Problem in Code 
+'''list2 = [1,2,3,4,5,6,7,8,9]
+for e in list2[-1::]:
+
+ for i  in list2:
+    if i<e:
+        print("Min in list is",i)
+for x in list2[1::]:
+    if i > e:
+        print("Maxin list",i)'''
+
+ #Find a element in a list??
+while True:
+ list2 = [1,2,3,4,5,6,7,8,9]
+ a = int(input("Enter the number you want to find in the list-->"))
+ if a in list2:
+    x=list2.index(a)
+    print("Find the elemrn in the list","it is in",x,"position")
+ elif a not in list2:
+    print("item not found in list ") 
+    
+    
+    
+#find frequency of element? 
+
+
+
+from itertools import count
+
+list2 = [1,2,3,4,5,6,7,8,9]
+a= int(input("enter the number"))
+print( "Frequency of the enter in the list is :--->",list2.count(a))
+
+
+# entering name and salary of person in the in dic??
+
+
+
+
+
+
+'''employdict={"Name":[],"Salary":[]}
+a= input("enter the name of the person:->")
+b= input("enter the salary of the person:->")
+employdict["Name"].append(a)
+employdict["Salary"].append(b)
+print(employdict)
+'''
+#1 Make a dic of friend and its phone number?? 
+
+employdict={ "raj":"91749294929249" ,"Gunjan":7979957178}
+#display element
+
+''' 
+print(employdict)
+
+#2 adding element
+
+a = int("enter name you what to add:-->")
+b= int("enter phone number:-->") 
+employdict.update({a:b})
+print(employdict)
+
+
+#3 remove value??
+
+
+x=int(input("Enter the name of friend youwant to remove:-->"))
+employdict.pop(x)
+
+'''
+#4 Update the phone number??
+
+
+t=(input("enter the name:-->"))
+p=int(input("enter name"))
+employdict.update({t:p})
+print(employdict)
+list=[-2,-5,-9,1,8,2,5]
+NegativeList=[]
+positiveList=[]
+for i in list:
+    if i<0:
+       positiveList.append(i) 
+for t in list:
+    if t>0:
+        NegativeList.append(t)   
+print(positiveList)
+print(NegativeList)
+
+
+
+
+
